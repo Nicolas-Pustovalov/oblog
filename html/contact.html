@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>OBlog</title>
+</head>
+<body id="contact-page">
+
+    <div class="container">
+        <section class="gauche">
+            <header class="header-left">
+                <img class="header-left__logo" src="../images/onews.svg" alt="logo">
+                <h1 class="header-left__title">O'clock Students News</h1>
+            </header>
+            <div class="latest-news">
+                <p><strong>Say a word</strong> <em>contact us</em></p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel ipsa praesentium sunt tempora odio perspiciatis dicta delectus, placeat deserunt vitae possimus quos aliquam similique adipisci nulla iste magni veniam. Quibusdam.</p>
+            </div>
+            <footer class="footer-left">
+                <nav>
+                    <a class="footer-left__link" href="#">Plan du site</a>
+                    <a class="footer-left__link" href="#">Mentions légales</a>
+                    <a class="footer-left__link" href="#">Contact</a>
+                </nav>
+            </footer>
+        </section>
+        <section class="droite">
+            <header class="header-right">
+                <h2 class="header-right__title">Latest news</h2>
+            </header>
+            <!-- Ici le formulaire de contact -->
+            <section id="contact">
+              <form id="form" action="">
+                <fieldset> <!-- Zone de champs "identité" -->
+                  <legend>Identité</legend>
+                  <div class="form-row"><!-- Une ligne de formulaire -->
+                    <p class="label">Je suis</p>
+                    <div class="input-group"> <!-- Je mets plusieurs input sur une même ligne -->
+                      <input type="radio" id="civilite-2" name="civilite" value="2" checked>
+                      <label for="civilite-2">une femme</label>
+                      <span>/</span>
+                      <input type="radio" id="civilite-1" name="civilite" value="1">
+                      <label  for="civilite-1">un homme</label>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <label class="label" for="prenom">Mon prénom est </label>
+                    <input type="text" id="prenom" placeholder="Prenom">
+                  </div>
+                  <div class="form-row">
+                    <label class="label" for="nom">Et mon nom, </label>
+                    <input type="text" id="nom" placeholder="Nom">
+                  </div>
+                  <div class="form-row">
+                    <label class="label" for="source">J'ai connu ce site grâce à </label>
+                    <select id="source" name="source">
+                      <option value="">choisir</option>
+                      <option value="fb">Facebook</option>
+                      <option value="twitter">Twitter</option>
+                      <option value="google">Google</option>
+                      <option value="bouche-a-oreilles">Bouche à oreilles</option>
+                      <option value="jpp">JT de 13h de Jean-Pierre Pernault</option>
+                      <option value="autre">Autre</option>
+                    </select>
+                  </div>
+                </fieldset>
+                <fieldset> <!-- Zone de champs "Message" -->
+                  <legend>Message</legend>
+                  <div class="form-row">
+                    <label class="label" for="email">Répondez-moi via</label>
+                    <input type="email" id="email" placeholder="Adresse e-mail">
+                  </div>
+                  <div class="form-row">
+                    <label class="label" for="message">Je voulais vous dire que</label>
+                    <textarea id="message" placeholder="Votre message"></textarea>
+                  </div>
+                  <div class="form-row">
+                    <label class="label" for="file">Et vous montrer ça aussi</label>
+                    <input type="file" id="file">
+                  </div>
+                </fieldset>
+                <fieldset> <!-- Zone confirmation -->
+                  <div class="form-row">
+                    <label class="label" for="info">Je certifie la véracité de ces informations.</label>
+                    <input required id="info" type="checkbox" name="info" value="1">
+                  </div>
+                </fieldset>
+                <button id="submit-form" type="submit">Envoyer</button>
+              </form>
+          </section>
+        </section>
+    </div>
+
+</body>
+</html>
